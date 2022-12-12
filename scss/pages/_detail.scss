@@ -1,0 +1,49 @@
+#detail-produk {
+  margin-top: 12em;
+
+  //   height: fit-content;
+  .thumbnail {
+  }
+
+  .more-produk {
+    color: $txt-primary;
+    padding-left: 100px;
+
+    .detail-border {
+      @include border-top;
+      margin-bottom: 2em;
+    }
+
+    h3 {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 50px;
+      /* identical to box height, or 125% */
+
+      letter-spacing: 0.2px;
+
+      /* light-text-color */
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      /* or 143% */
+
+      letter-spacing: 0.2px;
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
+
+    a {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 24px;
+      /* identical to box height, or 171% */
+
+      letter-spacing: 0.2px;
+      color: $bg-secondary;
+    }
+  }
+}

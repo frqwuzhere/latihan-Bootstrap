@@ -1,0 +1,186 @@
+#prices-section {
+  margin-top: 12em;
+  h5 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+    letter-spacing: 0.2px;
+    color: $bg-secondary;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    /* identical to box height, or 125% */
+
+    letter-spacing: 0.2px;
+    color: $txt-primary;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+    letter-spacing: 0.2px;
+    color: $txt-primary;
+  }
+
+  .prices-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 80px;
+    .card {
+      padding: 0;
+      vertical-align: middle;
+      border: none;
+      border-radius: none;
+      &- {
+        &head {
+          .sale-label {
+            @include sale-label;
+            top: 25px;
+            left: 15px;
+          }
+
+          .card-click {
+            position: absolute;
+            top: 191px;
+            right: 58px;
+
+            a {
+              @include icon-card;
+              margin-right: 10px;
+            }
+          }
+        }
+
+        &body {
+          padding: 20px 25px 35px 25px;
+          &- {
+            &rating {
+              width: 50px;
+              height: 26px;
+              background-color: $bg-primary;
+              width: fit-content;
+              border-radius: 20px;
+              padding: 5px;
+              float: right;
+
+              span {
+                font-weight: 400;
+                font-size: 12px;
+                /* identical to box height, or 133% */
+
+                letter-spacing: 0.2px;
+
+                /* light-text-color */
+
+                color: $txt-primary;
+              }
+            }
+            &subtitle {
+              font-weight: 700;
+              font-size: 14px;
+              line-height: 24px;
+              /* identical to box height, or 171% */
+
+              letter-spacing: 0.2px;
+
+              /* primary-text-color */
+
+              color: $bg-secondary;
+            }
+            &title {
+              margin-top: 10px;
+              margin-bottom: 10px;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 24px;
+              /* identical to box height, or 150% */
+
+              letter-spacing: 0.1px;
+
+              /* text-color */
+
+              color: #252b42;
+            }
+            &text {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 20px;
+              /* or 143% */
+
+              letter-spacing: 0.2px;
+
+              /* second-text-color */
+
+              color: $gray;
+              margin-bottom: 10px;
+            }
+
+            &sales {
+              font-weight: 700;
+              font-size: 14px;
+              line-height: 24px;
+              /* identical to box height, or 171% */
+
+              letter-spacing: 0.2px;
+
+              /* second-text-color */
+
+              color: $gray;
+              margin-bottom: 15px;
+            }
+
+            &prices {
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 24px;
+
+              text-align: start;
+              letter-spacing: 0.1px;
+
+              color: #bdbdbd;
+              margin-bottom: 25px;
+              margin-top: 15px;
+
+              .sales-prices {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                /* identical to box height, or 150% */
+
+                text-align: center;
+                letter-spacing: 0.1px;
+
+                /* secondary-color-1 */
+
+                color: #ff7b52;
+              }
+            }
+
+            &btn {
+              @include button-card;
+              transition: 0.5s all;
+
+              &:hover {
+                border: 1px solid $bg-secondary;
+                border-radius: 37px;
+                background-color: $bg-secondary;
+                color: $txt-primary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

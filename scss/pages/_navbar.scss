@@ -1,0 +1,48 @@
+.custom-nav {
+  background-color: $bg-primary;
+  width: 75%;
+  color: $txt-primary;
+
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2em;
+
+    letter-spacing: 0.1px;
+  }
+
+  #navbar {
+    .navbar-nav {
+      .nav-link {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: $txt-primary;
+      }
+    }
+    .navbar-login {
+      .nav-link {
+        font-weight: 700;
+        font-size: 0.9rem;
+        line-height: 3.5em;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: $txt-primary;
+        padding-right: 3em;
+      }
+
+      .btn {
+        @include button-basic;
+        text-transform: uppercase;
+        transition: 0.5s all;
+
+        &:hover {
+          background-color: $bg-primary;
+          border: 1px solid $txt-primary;
+        }
+      }
+    }
+  }
+}

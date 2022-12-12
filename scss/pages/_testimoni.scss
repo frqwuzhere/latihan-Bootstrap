@@ -1,0 +1,68 @@
+#testimoni-section {
+  margin-top: 12em;
+
+  .testimoni- {
+    &description {
+      h5 {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        /* identical to box height, or 171% */
+
+        letter-spacing: 0.2px;
+        color: $bg-secondary;
+      }
+      h3 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        /* identical to box height, or 125% */
+
+        letter-spacing: 0.2px;
+        color: $txt-primary;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        /* or 143% */
+
+        letter-spacing: 0.2px;
+        color: $txt-primary;
+      }
+    }
+
+    &card {
+      text-align: center;
+      margin-top: 80px;
+
+      .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      &- {
+        &body {
+          margin-top: 25px;
+          margin-right: 25px;
+          margin-left: 25px;
+          padding: 30px;
+
+          p {
+            margin-top: 15px;
+            line-height: 1.5;
+          }
+        }
+
+        &user {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}

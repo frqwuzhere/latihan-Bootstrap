@@ -1,0 +1,74 @@
+#hero-section {
+  height: 80vmin;
+  margin-top: 2em;
+  background-image: url(/aseets/img/hero.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 90vmin;
+
+  .hero-detail {
+    padding-top: 7em;
+  }
+
+  h5 {
+    font-weight: 700;
+    font-size: 1rem;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.1px;
+
+    /* primary-color */
+
+    color: $bg-secondary;
+    line-height: 1;
+  }
+
+  .hero-title {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1;
+    /* or 138% */
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    letter-spacing: 0.2px;
+    color: $txt-primary;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* or 150% */
+    padding-bottom: 30px;
+
+    letter-spacing: 0.2px;
+    color: $txt-primary;
+  }
+
+  .button {
+    &- {
+      &1 {
+        @include button-basic;
+        transition: 0.5s all;
+
+        &:hover {
+          background-color: $bg-primary;
+          border: 1px solid $txt-primary;
+        }
+      }
+
+      &2 {
+        @include button-basic;
+        background-color: $bg-primary;
+        border: 1px solid $txt-primary;
+        transition: 0.5s all;
+
+        &:hover {
+          background-color: $bg-secondary;
+          border: 1px solid $bg-secondary;
+        }
+      }
+    }
+  }
+}
